@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Nguyen Dai</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="./images/logo.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- link jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-spy="scroll">
+    <section id="background">
+        <div id="particles-js"></div>
+        <div class="logo-bg">
+            <img src="./images/logo.png" alt="Logo">
+        </div>
+        <div class="say-hello">
+            Hello I'm Nguyen Dai
+        </div>
+        <div class="cover-typed">
+            <div id="typed-strings">
+                <p>I'm a Front-End web developer.</p>
+                <p>Use <strong>3</strong> framewor: Angular - ReactJs - Vuejs</p>
+                <p>Also the backend side, I use:</p>
+                <p>.NET CORE - NODEJS - PHP - NESTJS(frame work of NODEJS)</p>
+            </div>
+            <span id="typed"></span>
+        </div>
+    </section>
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class=" collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <div class="line"></div>
+                    <a class="nav-link" href="#background">Home</span></a>
+                </li>
+                <li class="nav-item">
+                    <div class="line"></div>
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <div class="line"></div>
+                    <a class="nav-link" href="#experences">Experences</a>
+                </li>
+                <li class="nav-item">
+                    <div class="line"></div>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section id="about">
+        <div class="text-center">About me</div>
+        <div class="line-css">
+            <div class="vuong">
+
+            </div>
+        </div>
+    </section>
+    <section id="experences">
+        <div class="text-center">Experences</div>
+        <div class="line-css">
+            <div class="vuong">
+
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="text-center">Contact</div>
+        <div class="line-css">
+            <div class="vuong">
+
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="logo-footer text-center">
+            <img src="./images/logo.png" alt="Logo">
+        </div>
+        <div class="social">
+            <ul>
+                <li><a href="https://facebook.com/ngtrdai197"><i class="fa fa-facebook-official"
+                            aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/ngtrdai197"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/ngtrdai197"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        <div class="source">
+            Copyright © 2017-Present. All right reserved | by Dai Nguyen
+        </div>
+    </footer>
+    <div class="back-to-top">
+        <span class="back-arr"><i class=" fa fa-arrow-up" aria-hidden="true"></i></span>
+    </div>
+    <script src="./libs/typed.js"></script>
+    <script src="./libs/particles.js"></script>
+    <script src="./libs/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(() => {
+
+            var typed = new Typed('#typed', {
+                stringsElement: '#typed-strings',
+                loop: true,
+                typeSpeed: 100,
+                backSpeed: 70,
+            });
+            $('body').scrollspy({ target: ".navbar", offset: 50 });
+            $('.nav-item a').click(function () {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    // Store hash
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 500, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+
+            // back to top
+            $('.back-to-top').click(function () {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 500);
+            })
+        })
+    </script>
+
+</body>
+
+</html>
