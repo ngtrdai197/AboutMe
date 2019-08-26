@@ -3,7 +3,6 @@ body, html {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     position: relative;
-    font-family: 'Roboto', sans-serif;
 }
 
 /* menu mobile */
@@ -150,6 +149,8 @@ div#particles-js {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.75) inset;
+    color: #ffffff;
 }
 
 input.form-control {
@@ -157,11 +158,11 @@ input.form-control {
 }
 
 input::placeholder {
-    color: #333 !important;
+    color: #fff !important;
 }
 
 textarea::placeholder {
-    color: #333 !important;
+    color: #fff !important;
 }
 
 input {
