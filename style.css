@@ -1,17 +1,9 @@
 body, html {
     padding: 0;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
     position: relative;
 }
-
-/* menu mobile */
-
-#menu-mobile {
-    display: none;
-}
-
-/* end menu mobile */
 
 section#background {
     position: relative;
@@ -37,7 +29,7 @@ section#background {
     position: absolute;
     bottom: 250px;
     left: 150px;
-    font-size: 27px;
+    font-size: 42px;
     color: #fff;
     font-weight: bold;
 }
@@ -132,7 +124,7 @@ div#particles-js {
 }
 
 #about, #experences, #contact .text-center {
-    font-size: 27px;
+    font-size: 30px;
     text-transform: capitalize;
     padding-top: 1rem;
     position: relative;
@@ -160,6 +152,15 @@ input.form-control {
 input::placeholder {
     color: #fff !important;
 }
+input:focus{
+    background: transparent !important;
+    color: #fff !important;
+}
+
+textarea:focus{
+    background: transparent !important;
+    color: #fff !important;
+}
 
 textarea::placeholder {
     color: #fff !important;
@@ -167,10 +168,12 @@ textarea::placeholder {
 
 input {
     border: 1px solid #ffffff !important;
+    color: #fff !important;
 }
 
 textarea {
     border: 1px solid #ffffff !important;
+    color: #fff !important;
 }
 
 textarea.form-control {
@@ -188,7 +191,7 @@ textarea.form-control {
     transform: rotate(-45deg);
     position: absolute;
     left: 50%;
-    top: 1.1em;
+    top: 0.8em;
 }
 
 .line-css .vuong:before {
@@ -213,10 +216,42 @@ textarea.form-control {
     left: 6px;
 }
 
+#contact .line-css .vuong {
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 50%;
+    top: 1.1em;
+}
+
+#contact .line-css .vuong:before {
+    width: 70px !important;
+    height: 1px !important;
+    content: "";
+    background: #fff;
+    position: absolute;
+    transform: rotate(45deg);
+    top: -30px;
+    left: -65px;
+}
+
+#contact .line-css .vuong:after {
+    width: 70px !important;
+    height: 1px !important;
+    content: "";
+    background: #fff;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 40px;
+    left: 6px;
+}
+
 .back-to-top {
     position: fixed;
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     background: #266d7c;
     bottom: 80px;
     right: 70px;
@@ -232,7 +267,7 @@ textarea.form-control {
     transform: translate(-50%, -50%);
     color: #ffffff;
     transition: all 0.7s ease-in-out;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .back-to-top:hover {
@@ -248,7 +283,7 @@ textarea.form-control {
 footer {
     height: 250px;
     color: #ffffff;
-    background: #2b2929f5;
+    background: #080808e6;
 }
 
 /* FOOTER */
@@ -286,17 +321,6 @@ footer {
     color: gray;
 }
 
-#menu-mobile ul {
-    z-index: 999;
-    position: absolute;
-    top: 5.5em;
-    background: #343a40;
-    width: 100%;
-    padding: 0;
-    opacity: 0;
-    transition: all 0.6s ease-in-out;
-}
-
 @media only screen and (max-width: 767px) {
     #about{
         height: auto !important;
@@ -307,36 +331,13 @@ footer {
     nav {
         display: none !important;
     }
-    #menu-mobile {
-        display: block;
-        width: 100% !important;
-    }
-    #menu-mobile span {
-        color: #fff;
-        font-size: 40px;
-        position: absolute;
-        right: 1em;
-        top: 0.3em;
-        cursor: pointer;
-        z-index: 9999;
-    }
-    #menu-mobile ul {
-        text-align: center;
-    }
-    #menu-mobile ul li a {
-        font-size: 20px;
-        color: #ffffff !important;
-    }
-    #menu-mobile ul li a.nav-link {
-        padding: 10px !important;
-    }
     .logo-bg {
         top: 1em;
         left: 1em;
     }
     .say-hello {
         left: 2em;
-        font-size: 23px;
+        font-size: 26px;
     }
     .cover-typed {
         font-size: 20px;
@@ -408,10 +409,12 @@ footer {
         transform: translate(-50%, -50%);
     }
     #about .description h4{
-        font-size: 27px !important;
+        font-size: 26px !important;
+        color: #000;
+        font-weight: 600;
     }
     #about .content p{
-        font-size: 17px;
+        font-size: 16px;
         text-transform: none;
     }
 }

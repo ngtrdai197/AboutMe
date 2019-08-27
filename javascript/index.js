@@ -1,9 +1,10 @@
 $(document).ready(() => {
-    var typed = new Typed('#typed', {
+    new Typed('#typed', {
         stringsElement: '#typed-strings',
         loop: true,
-        typeSpeed: 100,
-        backSpeed: 70,
+        typeSpeed: 80,
+        backSpeed: 90,
+        smartBackspace: true
     });
 
     $('body').scrollspy({ target: ".navbar", offset: 50 });
